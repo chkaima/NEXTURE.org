@@ -1,0 +1,90 @@
+ body {
+        margin: 0;                     /* remove default white margins */
+  height: 200vh;                 /* make body fill full screen */
+  background-image: url('./images/ChatGPT\ Image\ Aug\ 19\,\ 2025\,\ 04_43_25\ PM.png'); /* set background image */
+  background-size: cover;        /* stretch image to cover whole page */
+  background-repeat: no-repeat;  /* don’t repeat */
+  background-position: center;   /* center the image */
+  background-attachment: fixed;  /* keep it fixed while scrolling */
+  
+  /* text styling */
+  color:black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* padding-top: 20%; */
+  padding: 20px;                /* add some padding */
+    }
+
+    .contact-form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
+    .links{
+     
+   font-size: 20px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+   margin-top: 0;
+   padding: 0px;
+   justify-content: flex-end;
+   display: flex;
+}
+
+.links a {
+    background-color: #007bff;  
+    color: #fff;                 
+    padding: 8px 16px;           
+    border-radius: 5px;          
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.links a:hover {
+    background-color: #0056b3; 
+          
+}
+.links ul{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5%;
+}

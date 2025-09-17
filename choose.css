@@ -1,0 +1,67 @@
+*{
+height: 10px;
+}
+.btn {
+ justify-content: center;
+
+background-color: aqua;
+cursor: pointer;
+border-radius: 30px;
+height: 50px;
+width: 200px;
+display: flex;
+}
+
+
+
+
+.btn:hover{
+    background-color: blue;
+    transition: 0s;
+
+}
+
+
+.forwho{
+   justify-content: center;
+    padding-top: 15%;
+    height: 50px;
+    display: flex;
+}
+
+a{
+    display: flex;
+}
+
+a:hover{
+background-color: white;
+}
+
+header{
+    text-align: center;
+      padding: 30px 0 10px;
+      text-decoration: underline;
+      text-decoration-color: #fff;
+}
+.header h1{
+    margin: 0;
+    
+    color: #fff;
+}
+
+body {
+  margin: 0;                     /* remove default white margins */
+  height: 200vh;                 /* make body fill full screen */
+  background-image: url('./images/ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 02_57_59\ PM.png'); /* set background image */
+  background-size: cover;        /* stretch image to cover whole page */
+  background-repeat: no-repeat;  /* don’t repeat */
+  background-position: center;   /* center the image */
+  background-attachment: fixed;  /* keep it fixed while scrolling */
+  
+  /* text styling */
+  color:black;
+  font-family: Arial, sans-serif;
+  
+  /* padding-top: 20%; */
+             /* add some padding */
+}

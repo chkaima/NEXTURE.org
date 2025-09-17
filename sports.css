@@ -1,0 +1,118 @@
+*{
+    box-sizing:border-box ;
+    
+}
+body {
+  margin: 0;                     /* remove default white margins */
+  height: 200vh;                 /* make body fill full screen */
+  background-image: url('./images/ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 02_57_59\ PM.png'); /* set background image */
+  background-size: cover;        /* stretch image to cover whole page */
+  background-repeat: no-repeat;  /* don’t repeat */
+  background-position: center;   /* center the image */
+  background-attachment: fixed;  /* keep it fixed while scrolling */
+  
+  /* text styling */
+  color:black;
+  font-family: Arial, sans-serif;
+  
+  /* padding-top: 20%; */
+             /* add some padding */
+}
+
+.links{
+     
+   font-size: 20px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+   margin-top: 0;
+   padding: 0px;
+   justify-content: flex-end;
+   display: flex;
+}
+
+.links a {
+    background-color: #007bff;  
+    color: #fff;                 
+    padding: 8px 16px;           
+    border-radius: 5px;          
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.links a:hover {
+    background-color: #0056b3; 
+          
+}
+.links ul{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.header{
+    text-align: center;
+      padding: 30px 0 10px;
+}
+.header h1{
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.products img{
+justify-content: space-between;
+height: 200px;
+width: 300px;
+border-radius: 10px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.products text{
+    text-align: center;
+    font-size: bolder;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+.products h3{
+color: #fff;
+font-size: 30px;
+    text-decoration: underline;
+}
+
+.products p{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.products .btn {
+    background-color: #28a745; 
+    color: #fff;                
+    border: none;               
+    padding: 10px 15px;         
+    border-radius: 5px;         
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+    width: 80px;
+    height: 80px;
+}
+
+.products .btn:hover {
+    background-color:#333; 
+}
+
+.cart {
+    position: absolute;
+    top: 20px;
+  left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}

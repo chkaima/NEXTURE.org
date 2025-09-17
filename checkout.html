@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - NEXTURE.COM</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="cart.html">Cart</a> |
+      <a href="sports.html">Sports Gear</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Fill in your details</h2>
+    <form id="checkoutForm" action="https://script.google.com/macros/s/AKfycbxkp-axxyIsCDRDb62o04EtvRG6sXzw8tmyujlWO7rVoQVbILtIU4uJjy4OkkF0GtnHNQ/exec" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. +234..." required>
+
+      <h3>Your Order:</h3>
+      <ul id="order-summary"></ul>
+      <p><strong>Total: ₦<span id="order-total">0</span></strong></p>
+
+      <button type="submit" class="submit-btn">Place Order</button>
+    </form>
+  </main>
+
+  <script>
+    // Load cart from localStorage and display
+    function loadOrderSummary() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let orderSummary = document.getElementById('order-summary');
+      let orderTotal = document.getElementById('order-total');
+      orderSummary.innerHTML = "";
+      let total = 0;
+
+      cart.forEach(item => {
+        let li = document.createElement('li');
+        li.textContent = item.name + " - ₦" + item.price.toLocaleString();
+        orderSummary.appendChild(li);
+        total += item.price;
+      });
+
+      orderTotal.innerText = total.toLocaleString();
+    }
+
+    loadOrderSummary();
+
+    // Handle form submission
+    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let items = cart.map(item => item.name + " (₦" + item.price + ")").join(", ");
+      let total = cart.reduce((sum, item) => sum + item.price, 0);
+
+      let data = {
+        name: this.name.value,
+        email: this.email.value,
+        phone: this.phone.value,
+        items: items,
+        total: total
+      };
+
+      fetch(this.action, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" }
+      })
+      .then(res => res.text())
+      .then(txt => {
+        alert("✅ Order placed successfully! You’ll receive a confirmation email soon.");
+        localStorage.removeItem('cart');
+        window.location.href = "Thankyou.html"; // redirect after success
+      })
+      .catch(err => alert("❌ Error: " + err));
+    });
+  </script>
+</body6>
+</html>
