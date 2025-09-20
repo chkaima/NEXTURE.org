@@ -63,8 +63,8 @@ body {
 
 .products img{
 justify-content: space-between;
-height: 200px;
-width: 300px;
+height: 20px;
+width: 30px;
 border-radius: 10px;
 }
 .products {
@@ -117,3 +117,4 @@ font-size: 30px;
     cursor: pointer;
 
 }
+
