@@ -52,7 +52,7 @@ header{
 body {
   margin: 0;                     /* remove default white margins */
   height: 200vh;                 /* make body fill full screen */
-  background-image: url('./images/ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 02_57_59\ PM.png'); /* set background image */
+  background-image: url('ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 02_57_59\ PM.png'); /* set background image */
   background-size: cover;        /* stretch image to cover whole page */
   background-repeat: no-repeat;  /* don’t repeat */
   background-position: center;   /* center the image */
@@ -65,3 +65,4 @@ body {
   /* padding-top: 20%; */
              /* add some padding */
 }
+
