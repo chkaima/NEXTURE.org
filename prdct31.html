@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="prdctstyle.css">
+    <title>VIEW PRODUCT</title>
+</head>
+<body>
+ <header class="header"><h1>PREMIUM</h1></header>
+  <div class="scroll">
+<div class="img"><img src="jerses 3.jpeg" alt="VIEW">
+  <h2>PRICE:₦1000</h2>
+</div>
+<header class="header">
+<h1>football jersey with shorts boots and other <br>ACCESORIES!</h1><br></header>
+
+
+  </div>    
+<div class="button">
+   <button class="btn" onclick="addToCart('prem 1',10000)">Add to Cart</button>
+    <button class="btn" onclick="window.location.href='all.html'">CONTINUE SHOPPING</button>
+     <button class="btn" onclick="window.location.href='cart.html'">GO to Cart</button>
+</div>
+       <script>
+    function addToCart(name, price) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ name, price });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(name + " ADDED TO YOUR CART !");
+    }
+    </script>
+    
+</body>
+</html>

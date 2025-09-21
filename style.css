@@ -20,7 +20,7 @@ body {
 
   .links button{
     background-color: blue;
-    height: 50px;
+    height: 100px;
     width: 2000px;
     cursor: pointer;
     border-radius: 50px;
@@ -33,24 +33,12 @@ body {
    
   }
 
- 
-
-
   .btn{
     color: #fff;
   }
   .btn:hover{
     color: darkcyan;
   }
-
-
-  
- 
-
-
-          
-
-
 
 .header{
     text-align: center;
@@ -80,7 +68,7 @@ body {
    justify-content: center;
   
   
-   padding: 200px;
+   padding: 100px;
    justify-content: center;
    display: flex;
 }
@@ -105,3 +93,19 @@ body {
     padding-top: 5%;
 }
 
+.logos{
+  justify-items:center;
+  display: flex;
+  padding-bottom: 10%;
+}
+
+.logos img{
+height: 180px;
+background-color: white;
+border-radius: 30px;
+padding-top:0.01%;
+}
+
+.logos h1{
+  text-decoration:underline;
+}

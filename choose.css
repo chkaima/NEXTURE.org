@@ -3,13 +3,14 @@ height: 10px;
 }
 .btn {
  justify-content: center;
-
+display:flex;
+margin: 10px 0px;
 background-color: aqua;
 cursor: pointer;
 border-radius: 30px;
 height: 50px;
 width: 200px;
-display: flex;
+display: block;
 }
 
 
@@ -23,10 +24,10 @@ display: flex;
 
 
 .forwho{
-   justify-content: center;
+   justify-items: center;
     padding-top: 15%;
     height: 50px;
-    display: flex;
+    
 }
 
 a{
@@ -52,7 +53,7 @@ header{
 body {
   margin: 0;                     /* remove default white margins */
   height: 200vh;                 /* make body fill full screen */
-  background-image: url('./images/ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 02_57_59\ PM.png'); /* set background image */
+  background-image: url('ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 02_57_59\ PM.png'); /* set background image */
   background-size: cover;        /* stretch image to cover whole page */
   background-repeat: no-repeat;  /* don’t repeat */
   background-position: center;   /* center the image */

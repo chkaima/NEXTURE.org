@@ -27,6 +27,16 @@
 
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone" placeholder="e.g. +234..." required>
+      
+        <label for="Address">ADDRESSS</label>
+      <input type="text" id="address" name="address" placeholder="enter your address..." required>
+
+       <label for="country">COUNTRY</label>
+      <input type="text" id="country" name="country" placeholder="enter your country..." required>
+      
+      <label for="state">state</label>
+      <input type="text" id="state" name="state" placeholder="enter your state..." required>
+
 
       <h3>Your Order:</h3>
       <ul id="order-summary"></ul>
@@ -69,6 +79,9 @@
         name: this.name.value,
         email: this.email.value,
         phone: this.phone.value,
+        address: this.address.value,
+        country: this.country.value,
+        state: this.state.value,
         items: items,
         total: total
       };
