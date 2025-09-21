@@ -93,6 +93,7 @@ body {
     padding-top: 5%;
 }
 
+<<<<<<< HEAD
 .logos{
   justify-items:center;
   display: flex;
@@ -109,3 +110,6 @@ padding-top:0.01%;
 .logos h1{
   text-decoration:underline;
 }
+=======
+
+>>>>>>> 0500c03d4727a6d406c3b9dfb1652d19ba644fde

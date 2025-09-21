@@ -63,8 +63,8 @@ body {
 
 .products img{
 justify-content: space-between;
-height: 200px;
-width: 300px;
+height: 100px;
+width: 120px;
 border-radius: 10px;
 }
 .products {
@@ -103,6 +103,11 @@ font-size: 30px;
     transition: background-color 0.3s ease;
     width: 80px;
     height: 80px;
+      text-align: center;
+    font-size: bolder;
+    
+    margin-top: 10px;
+}
 }
 
 .products .btn:hover {
@@ -117,3 +122,9 @@ font-size: 30px;
     cursor: pointer;
 
 }
+
+
+
+
+
+
